@@ -18,20 +18,20 @@ window.addEventListener("load", () => {
 	else change(1);
 
 	const getTime = () => {
-		var EndTime=new Date("2022/06/07 08:00");
-		var name="2022高考";
+		var EndTime=new Date("2022/06/18 09:00");
+		var name="2022年上海市初中学业水平考试";
 
 
 	
-		if(getQueryVariable("date")==false||getQueryVariable("time")==false||getQueryVariable("name")==false) EndTime= new Date("2022/06/07 08:00"),name="2022高考";
+		if(getQueryVariable("date")==false||getQueryVariable("time")==false||getQueryVariable("name")==false) EndTime= new Date("2022/06/18 09:00"),name="2022年上海市初中学业水平考试";
 		else EndTime= new Date(getQueryVariable("date")+" "+getQueryVariable("time")),name=decodeURI(getQueryVariable("name")); 
 
-		document.getElementById("name").innerHTML="距离"+decodeURI(name)+"还有";
+		document.getElementById("name").innerHTML="距离"+decodeURI(name);
 		document.getElementById("title").innerHTML=name+"倒计时";
         var NowTime = new Date();
         var t =EndTime.getTime() - NowTime.getTime();
 		
-		if(t<0) EndTime= new Date("2022/06/07 08:00"),name="2022高考",t =EndTime.getTime() - NowTime.getTime();
+		if(t<0) EndTime= new Date("2022/06/18 09:00"),name="2022年上海市初中学业水平考试",t =EndTime.getTime() - NowTime.getTime();
 
         const days = Math.floor(t/1000/60/60/24);
 

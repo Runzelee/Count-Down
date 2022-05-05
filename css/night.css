@@ -42,7 +42,7 @@ hr {
   .container .menu {
     display: flex;
     align-items: center;
-    width: 400px;
+    width: auto;
     height: 85px; }
     .container .menu div {
       font-family: 'Share Tech Mono',monospace;
@@ -52,9 +52,14 @@ hr {
       font-weight: 500; }
       .container .menu div span {
         cursor: pointer; }
+    @media screen and (min-width: 700px) {
     .container .menu .set {
       font-size: 30px;
-      font-weight: 400; }
+      font-weight: 400; }}
+    @media screen and (max-width: 699px) {
+    .container .menu .set {
+      font-size: 20px;
+      font-weight: 400; }}
   .container .clock {
     border-radius: 5px;
     display: flex;

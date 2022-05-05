@@ -1,6 +1,8 @@
-# 2022高考倒计时
+# ~~2022高考倒计时~~ 更改到中考
 
-本项目由2019中考倒计时修改得来
+~~本项目由2019中考倒计时修改得来~~ 又改回2022中考🌝  
+部署到vercel，中考结束后改各种考试
+https://countdown.runzelee.xyz
 
 感谢[Eqvpkbz](http://eqvpkbz.github.io/)大佬的帮助
 
