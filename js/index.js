@@ -27,7 +27,7 @@ window.addEventListener("load", () => {
 		else EndTime= new Date(getQueryVariable("date")+" "+getQueryVariable("time")),name=decodeURI(getQueryVariable("name")); 
 
 		document.getElementById("name").innerHTML="距离"+decodeURI(name);
-		document.getElementById("title").innerHTML="2022中考倒计时";
+		//document.getElementById("title").innerHTML="2022中考倒计时";
         var NowTime = new Date();
         var t =EndTime.getTime() - NowTime.getTime();
 		
@@ -71,5 +71,5 @@ function change(a){
     }
 }
 function jump(){
-	window.location.href="https://github.com/MicDZ/Count-down";
+	window.location.href="https://github.com/Runzelee/Count-down";
    }
