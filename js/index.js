@@ -19,7 +19,7 @@ window.addEventListener("load", () => {
 
 	const getTime = () => {
 		var EndTime=new Date("2022/06/18 09:00");
-		var name="2022年上海市初中学业水平考试";
+		var name="2022年中考";
 
 
 	
