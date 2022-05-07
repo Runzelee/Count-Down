@@ -1,8 +1,19 @@
-# ~~2022高考倒计时~~ 更改到中考
+# 2022上海中考倒计时
 
-~~本项目由2019中考倒计时修改得来~~ 又改回2022中考🌝  
-部署到vercel，中考结束后改各种考试
-https://countdown.runzelee.xyz
+首先恭喜[上海中考延期](https://mp.weixin.qq.com/s/D02YZKJpeoqMWhjdLthDNg) 
+
+本项目由2022高考倒计时修改得来，并进行了一些优化，未来将改为可选的多重倒计时   
+已经部署到vercel：
+https://countdown.runzelee.xyz  
+同时使用tauri打包成桌面版：[这里](https://github.com/Count-Down-tauri)  
+为了方便，tauri项目将此项目作为一个submodule，所以该项目部分优化是为兼顾tauri桌面平台
+
+
+
+
+## 以下为原repo README
+
+本项目由2019中考倒计时修改得来
 
 感谢[Eqvpkbz](http://eqvpkbz.github.io/)大佬的帮助
 
