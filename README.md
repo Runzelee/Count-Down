@@ -5,7 +5,7 @@
 本项目由2022高考倒计时修改得来，并进行了一些优化，未来将改为可选的多重倒计时   
 已经部署到vercel：
 https://countdown.runzelee.xyz  
-同时使用tauri打包成桌面版：[这里](https://github.com/Count-Down-tauri)  
+同时使用tauri打包成桌面版：[这里](https://github.com/Runzelee/Count-Down-tauri)  
 为了方便，tauri项目将此项目作为一个submodule，所以该项目部分优化是为兼顾tauri桌面平台
 
 
