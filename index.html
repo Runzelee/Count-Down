@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link href="css/font-awesome.min.css" rel="stylesheet">
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title id="title"></title>
-        <meta name="author" content="MicDZ(Modified by Runzelee)">
-        <meta name="description" content="2022年上海市初中学业水平考试倒计时">
-        <link rel="stylesheet" href="css/night.css" id="css"/>
-        
-		<script src="js/index.js"></script>
-        <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Runzelee/image-hosting@main/pics/favicon.4k0b83tvbt00.webp">
-    </head>
-    <body>
-        <div class="container">
-            <div class="menu">
-            
-                <div class="set" id="name">
-                </div>
-                
+<head>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title id="title"></title>
+    <meta name="author" content="MicDZ(Modified by Runzelee)">
+    <meta name="description" content="2022年上海市初中学业水平考试倒计时">
+    <link rel="stylesheet" href="css/night.css" id="css" />
+
+    <script src="js/index.js"></script>
+    <link rel="shortcut icon"
+        href="https://cdn.jsdelivr.net/gh/Runzelee/image-hosting@main/pics/favicon.4k0b83tvbt00.webp">
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu">
+
+            <div class="set" id="name">
             </div>
 
-            <div class="clock">
-                <div class="clock-item">
+        </div>
 
-                    <span class="day">000</span>
-                    <div>天</div>
-                    <span class="hour">00</span>
-                    <div>时</div>
-                    <span class="minute">00</span>
-                    <div>分</div>
-                    <span class="second">00</span>
-                    <div>秒</div>
-                </div>
-                
-                
-                <!-- <div class="clock-item day">
+        <div class="clock">
+            <div class="clock-item">
+
+                <span class="day">000</span>
+                <div>天</div>
+                <span class="hour">00</span>
+                <div>时</div>
+                <span class="minute">00</span>
+                <div>分</div>
+                <span class="second">00</span>
+                <div>秒</div>
+            </div>
+
+
+            <!-- <div class="clock-item day">
                     <div>天</div>
                     <span>000</span>
                 </div>
@@ -53,27 +56,72 @@
                     <div>秒</div>
                     <span>00</span>
                 </div> -->
-            </div>
-            
-            <div class="pass">
-                <span>今天已经过去</span>
-                
-            
-                <div class="prog">
-                    <progress id="progress" value="50" max="100"></progress><br>
-                </div>
-                <div class="data"><span>0.00%</span></div>
-            </div>
-
-            <a href="https://mp.weixin.qq.com/s/D02YZKJpeoqMWhjdLthDNg" target="_blank">中考已延期至7月11日</a>
-            
-        </div> 
-
-        <div class="switch">
-            <button onClick="change(1)" class="btn Night">Night</button>
-            <button onClick="change(2)" class="btn Light">Light</button>
         </div>
 
-        
-    </body>
+        <div class="pass">
+            <span>今天已经过去</span>
+
+
+            <div class="prog">
+                <progress id="progress" value="50" max="100"></progress><br>
+            </div>
+            <div class="data"><span>0.00%</span></div>
+        </div>
+
+    </div>
+
+    <div class="switch">
+        <button onClick="change(1)" class="btn Night">Night</button>
+        <button onClick="change(2)" class="btn Light">Light</button>
+    </div>
+
+    <footer class="column">
+        <div>
+            <a href="https://github.com/Runzelee/Count-Down" target="_blank" title="GitHub-web" id="webghicon" style="display:none;">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                        d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5">
+                    </path>
+                </svg>
+            </a>
+            <a href="https://github.com/Runzelee/Count-Down-tauri" target="_blank" title="GitHub-tauri" id="taurighicon" style="display:none;">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                        d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5">
+                    </path>
+                </svg>
+            </a>
+            <a href="https://github.com/Runzelee/Count-Down-tauri/releases" target="_blank" title="下载桌面版" id="downicon" style="display:none;">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-download" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
+                    <polyline points="7 11 12 16 17 11" />
+                    <line x1="12" y1="4" x2="12" y2="16" />
+                </svg>
+            </a>
+            <a href="https://countdown.runzelee.xyz" target="_blank" title="Web" id="查看网页版" style="display:none;">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-browser" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <rect x="4" y="4" width="16" height="16" rx="1" />
+                    <line x1="4" y1="8" x2="20" y2="8" />
+                    <line x1="8" y1="4" x2="8" y2="8" />
+                </svg>
+            </a>
+        </div>
+
+        <a href="https://mp.weixin.qq.com/s/D02YZKJpeoqMWhjdLthDNg" target="_blank">中考已延期至7月11日</a>
+    </footer>
+
+</body>
+
 </html>
