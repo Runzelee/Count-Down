@@ -14,7 +14,7 @@ window.addEventListener("load", () => {
 	const minute = document.querySelector(".minute");
 	const second = document.querySelector(".second");
 
-    //支持系统暗色
+	//支持系统暗色
 	let prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
 	if (decodeURI(getQueryVariable("mode")) == "light") change(2);
@@ -66,12 +66,12 @@ window.addEventListener("load", () => {
 	}, 1000);
 
 
-	if(!ifUsingTauri()){
-		document.getElementById("downicon").style.display="unset";
-		document.getElementById("webghicon").style.display="unset";
-	}else{
-		document.getElementById("webicon").style.display="unset";
-		document.getElementById("taurighicon").style.display="unset";
+	if (!ifUsingTauri()) {
+		document.getElementById("downicon").style.display = "unset";
+		document.getElementById("webghicon").style.display = "unset";
+	} else {
+		document.getElementById("webicon").style.display = "unset";
+		document.getElementById("taurighicon").style.display = "unset";
 	}
 
 });
@@ -108,18 +108,14 @@ function jump() {
 }
 
 //测试是否使用tauri
-function ifUsingTauri(){
-	try{
-		const ver = getTauriVersion();
-		if(ver.length!==0){
-			//console.log("You are using tauri.");
-			return true;
-		}else{
-			console.error("Something went wrong with tauri.");
-			return false;
-		}
-	}catch(e){
-        //console.log("You are using browser.");
+function ifUsingTauri() {
+	try {
+		window.__TAURI__.app.getVersion().then((ver) =>
+			document.getElementById("ver").innerHTML = "桌面版 v" + ver
+		);
+		return true;
+	} catch (e) {
+		//console.log("You are using browser.");
 		return false;
 	}
 }

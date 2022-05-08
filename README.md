@@ -2,13 +2,11 @@
 
 首先恭喜[上海中考延期](https://mp.weixin.qq.com/s/D02YZKJpeoqMWhjdLthDNg) 
 
-本项目由2022高考倒计时修改得来，并进行了一些优化，未来将改为可选的多重倒计时   
+本项目由2022高考倒计时修改得来，并进行了一些优化，中考后将改为可选的多重倒计时和[URL参数配置](#使用实例)配合使用   
 已经部署到vercel：
 https://countdown.runzelee.xyz  
 同时使用tauri打包成桌面版：[这里](https://github.com/Runzelee/Count-Down-tauri)  
 为了方便，tauri项目将此项目作为一个submodule，所以该项目部分优化是为兼顾tauri桌面平台
-
-
 
 
 ## 以下为原repo README

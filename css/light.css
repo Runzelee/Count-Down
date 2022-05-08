@@ -259,6 +259,16 @@ footer {
   }
 }
 
+div#ver{
+  font-family: monospace, 'Share Tech Mono';
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 300;
+  text-decoration: none;
+  color: #000;
+}
+
 .github {
   display: flex;
   align-items: center;
